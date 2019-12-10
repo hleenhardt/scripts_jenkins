@@ -9,6 +9,8 @@ help()
     echo ""
     echo " - Param1: dossier ou sera créee l'archive de backup"
     echo " - Param2: nom de l'archive"
+    echo "Exemple: ./backup_jenkins.sh ~/backup_jenkins backup_jenkins.tar"
+    echo ""
 }
 
 if [ "$1" == "-h" ]; then
