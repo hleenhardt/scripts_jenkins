@@ -2,6 +2,11 @@
 
 Ensemble de script pour faciliter la gestion d'un serveur jenkins dans Docker
 
+## Pré-requis
+
+* Image docker jenkins: jenkins/jenkins:lts
+* Image docker bash   : bash:3.2.57
+
 ## Backup_jenkins.sh
 
 Script permettant de faire un backup du dossier jenkins home depuis un container docker nommé **jenkins**. Le dossier jenkins_home est stocké dans un volume docker. Le script l'extrait et créer une archive .tar. Il est possible de customiser la commande tar dans le script pour etre plus selectif sur le backup. **Le container jenkins doit être arreté**
